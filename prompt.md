@@ -1,6 +1,6 @@
 Write an R script which creates a US states choropleth map with ggplot using data from [data.gov](https://catalog.data.gov/dataset/data-anthropogenic-secondary-organic-aerosol-and-ozone-production-from-asphalt-related-emi), specifically the file AP_2018_State_County_Inventory.xlsx, which can be found at this URL: https://pasteur.epa.gov/uploads/10.23719/1531683/AP_2018_State_County_Inventory.xlsx. Use the "Output - State" sheet and the columns State and "Total kg/person".
 
-Use the same color scale as displayed in the Total kg/person column. A choice for this color palette could be viridis turbo, or smilar, where low values are dark green, medium are orange/yellow, and high values are red. State borders should be grey. 
+Use the same or similar color scale as displayed in the Total kg/person column. A choice for this palette could be viridis turbo or smilar where low values are dark green, medium are orange/yellow, and high values are red. State borders should be grey. 
 
 The script should save the map to a PNG file stored in a "plots" folder. The plot should mention the data source in the plot caption in the lower left corner of the plot margin. 
 
@@ -14,4 +14,4 @@ Create a README.md that displays the map by linking to the PNG plot file. Save t
 
 In the README.md, cite the research paper associated with this dataset: "Anthropogenic secondary organic aerosol and ozone production from asphalt-related emissions" and link to its DOI at: https://doi.org/10.1039/D3EA00066D.
 
-Link to all of the markdown (*.md) files in the README.md and list all of these files in the project structure section of the README.md.
+Link to all of the markdown (.md) files in the README.md and list all of these files in the project structure section of the README.md.
