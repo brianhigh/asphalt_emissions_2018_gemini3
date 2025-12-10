@@ -10,10 +10,8 @@ Your code should create the "data" and "plots" folders if they do not already ex
 
 Include error handling in the code. Test and debug your code. 
 
-Create a README.md that displays the map by linking to the PNG plot file. Save the implementation plan as plan.md. Save the walkthrough as walkthrough.md. Create a .gitignore file to exclude VS Code or RStudio metadata files. Do not list the data and plots folders/files in the .gitignore as we want them in the repo.
+Create a README.md that displays the map by linking to the PNG plot file. Save the implementation plan as plan.md. Create a tasks.md file for the task checklist used to implement the plan. Save the walkthrough as walkthrough.md. Create a .gitignore file to exclude VS Code or RStudio metadata files. Do not list the data and plots folders/files in the .gitignore as we want them in the repo.
 
 In the README.md, cite the research paper associated with this dataset: "Anthropogenic secondary organic aerosol and ozone production from asphalt-related emissions" and link to its DOI at: https://doi.org/10.1039/D3EA00066D.
-
-Create a tasks.md file for the task checklist used to implement the plan.
 
 Link to all of the markdown (*.md) files in the README.md and list all of these files in the project structure section of the README.md.
