@@ -4,7 +4,7 @@ Use the same color scale as displayed in the Total kg/person column. A choice fo
 
 The script should save the map to a PNG file stored in a "plots" folder. The plot should mention the data source in the plot caption in the lower left corner of the plot margin. 
 
-Include the code to conditionally download the data file from data.gov if the file has not already been downloaded. Save the data file to a "data" folder. Use pacman::p_load() to load R packages. 
+Include the code to conditionally download the data file if the file has not already been downloaded. Save the data file to a "data" folder. Use pacman::p_load() to load R packages. 
 
 Your code should create the "data" and "plots" folders if they do not already exist. 
 
