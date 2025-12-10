@@ -14,4 +14,6 @@ Create a README.md that displays the map by linking to the PNG plot file. Save t
 
 In the README.md, cite the research paper associated with this dataset: "Anthropogenic secondary organic aerosol and ozone production from asphalt-related emissions" and link to its DOI at: https://doi.org/10.1039/D3EA00066D.
 
-Link to the prompt.md, plan.md, and walkthrough.md files in the README.md and list all of these files in the project structure section of the README.md.
+Create a tasks.md file for the task checklist used to implement the plan.
+
+Link to all of the markdown (*.md) files in the README.md and list all of these files in the project structure section of the README.md.
