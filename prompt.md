@@ -8,7 +8,7 @@ Include the code to conditionally download the data file if the file has not alr
 
 Your code should create the "data" and "plots" folders if they do not already exist. 
 
-Include error handling in the code. Test and debug your code. When successful reading the data file, do not print informational messages provided by the read_excel function, so do not show "New names:" output, but do print a message when the file is successfully read.
+Include error handling in the code. Test and debug your code. When successful reading the data file, do not print informational messages provided by the read_excel function, so do not show "New names:" output, but do print a message when the file is successfully read. Suppress warnings when converting values to numeric.
 
 Create a README.md that displays the map by linking to the PNG plot file. Save the implementation plan as plan.md. Create a tasks.md file for the task checklist used to implement the plan. Save the walkthrough as walkthrough.md. Create a .gitignore file to exclude VS Code or RStudio metadata files. Do not list the data and plots folders/files in the .gitignore as we want them in the repo.
 
