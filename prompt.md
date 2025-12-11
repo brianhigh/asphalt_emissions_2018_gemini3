@@ -2,7 +2,7 @@
 
 ### **Goal**
 
-Write an R script that creates a choropleth map of U.S. states using **ggplot2**, based on asphalt emissions data provided by the U.S. Environmental Protection Agency (EPA). The data file is: `AP_2018_State_County_Inventory.xlsx`. Download URL: `https://pasteur.epa.gov/uploads/10.23719/1531683/AP_2018_State_County_Inventory.xlsx`
+Write an R script that creates a choropleth map of U.S. states based on asphalt emissions data provided by the U.S. Environmental Protection Agency (EPA). The data file is: `AP_2018_State_County_Inventory.xlsx`. Download URL: `https://pasteur.epa.gov/uploads/10.23719/1531683/AP_2018_State_County_Inventory.xlsx`
 
 ***
 
@@ -27,7 +27,11 @@ Write an R script that creates a choropleth map of U.S. states using **ggplot2**
 
 #### **Map Visualization**
 
-1.  Create a U.S. states choropleth map using **ggplot2**.
+1.  Create a U.S. states choropleth map.
+    * Use `usmap::plot_usmap()` for creating the base map.
+    * Then use **ggplot** functions for adding additional features.
+    * Be sure to include Alaska and Hawaii.
+    * NOTE: In usmap ≥ 0.7.0, us_map() now returns an sf object with a geometry column (geom), not the older fortified data frame with x, y, and group columns.
 2.  Color scale for `Total kg/person`:
     *   Low values: **dark green**
     *   Medium values: **yellow**
@@ -41,7 +45,7 @@ Write an R script that creates a choropleth map of U.S. states using **ggplot2**
     *   **Subtitle**: Provide context for the visualization.
     *   **Caption**: Cite the data source in the lower-left margin.
 6.  Remove:
-    *   **Axis Titles**: Do *not* include x and y axis titles or labels.
+    *   **Axis Titles**: Do *not* include x and y axis titles, labels, or ticks.
 7.  Save the map as a **PNG** in a `plots/` folder.
     *   In the R script, create the `plots/` folder if it does not exist.
 
@@ -86,5 +90,5 @@ Create the following files:
     *   Citation and DOI link.
     *   Links to all markdown files.
     *   Project structure section.
-*   `plan.md`, `tasks.md`, `walkthrough.md`, `.gitignore`.
+*   `plan.md`, `prompt.md`, `tasks.md`, `walkthrough.md`, `.gitignore`.
 
