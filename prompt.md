@@ -1,17 +1,87 @@
-Write an R script which creates a US states choropleth map with ggplot using data from [data.gov](https://catalog.data.gov/dataset/data-anthropogenic-secondary-organic-aerosol-and-ozone-production-from-asphalt-related-emi), specifically the file AP_2018_State_County_Inventory.xlsx, which can be found at this URL: https://pasteur.epa.gov/uploads/10.23719/1531683/AP_2018_State_County_Inventory.xlsx. Use the "Output - State" sheet and the columns State and "Total kg/person".
+### **Coding Prompt**
 
-The color scale for "Total kg/person" should be: low values are dark green, medium are yellow/orange, and high values are red. State borders should be grey. The plot background should be white.
+**Goal:**  
+Write an R script that creates a choropleth map of U.S. states using **ggplot2**, based on asphalt emissions data provided by the U.S. Environmental Protection Agency (EPA). The data file is: `AP_2018_State_County_Inventory.xlsx`. Download URL: `https://pasteur.epa.gov/uploads/10.23719/1531683/AP_2018_State_County_Inventory.xlsx`
 
-The script should save the map to a PNG file stored in a "plots" folder. The plot should mention the data source in the plot caption in the lower left corner of the plot margin. 
+***
 
-Include the code to conditionally download the data file if the file has not already been downloaded. Save the data file to a "data" folder. Use pacman::p_load() to load R packages. 
+### **Requirements**
 
-Your code should create the "data" and "plots" folders if they do not already exist. 
+#### **Data Handling**
 
-Include error handling in the code. Test and debug your code. When successful reading the data file, do not print informational messages provided by the read_excel function, so do not show "New names:" output, but do print a message when the file is successfully read. Suppress warnings when converting values to numeric.
+1.  Use the **"Output - State"** sheet from the Excel file.
+2.  Extract columns:
+    *   `State`
+    *   `Total kg/person`
+3.  Ensure state names match between the emissions data and the map data. One approach might be to convert the state names in both data sources to lower case before merging them.
+4.  Suppress warnings when converting values to numeric.
+5.  Print a success message after reading the data, but **do not** show `read_excel` informational messages (e.g., "New names:").
+    * Consider using the `.name_repair = "unique_quiet"` argument to read_excel().
+6.  Conditionally download the data file if it does not exist locally.
+    *   Make sure to download the Excel data file in binary mode.
+    *   Save the file in a `data/` folder.
+    *   In the R script, create the `data/` folder if it does not exist.
 
-Create a README.md that displays the map by linking to the PNG plot file. Save the implementation plan as plan.md. Create a tasks.md file for the task checklist used to implement the plan. Save the walkthrough as walkthrough.md. Create a .gitignore file to exclude VS Code or RStudio metadata files. Do not list the data and plots folders/files in the .gitignore as we want them in the repo.
+***
 
-In the README.md, cite the research paper associated with this dataset: "Anthropogenic secondary organic aerosol and ozone production from asphalt-related emissions" and link to its DOI at: https://doi.org/10.1039/D3EA00066D.
+#### **Map Visualization**
 
-Link to all of the markdown (.md) files in the README.md and list all of these files in the project structure section of the README.md.
+1.  Create a U.S. states choropleth map using **ggplot2**.
+2.  Color scale for `Total kg/person`:
+    *   Low values: **dark green**
+    *   Medium values: **yellow**
+    *   High values: **red**
+    *   Ensure colors are vivid and distinct (not washed out or muddy).
+3.  State borders: **grey**.
+4.  Plot background: **white**.
+5.  Add:
+    *   **Title**: Include `(2018)` at the end because this is the year of the State County Inventory data file.
+    *   **Subtitle**: Provide context for the visualization.
+    *   **Caption**: Cite the data source in the lower-left margin.
+6.  Remove:
+    *   **Axis Titles**: Do *not* include x and y axis titles or labels.
+7.  Save the map as a **PNG** in a `plots/` folder.
+    *   In the R script, create the `plots/` folder if it does not exist.
+
+***
+
+#### **Project Structure**
+
+Create the following files:
+
+*   `README.md`:
+    *   Show the map by linking to the PNG file.
+    *   Cite the research paper:  
+        *Anthropogenic secondary organic aerosol and ozone production from asphalt-related emissions, Environ. Sci.: Atmos., 2023,3, 1221-1230* 
+        DOI: <https://doi.org/10.1039/D3EA00066D>
+    *   Include links to all markdown files.
+    *   Include a **Project Structure** section listing all files.
+*   `plan.md`: Implementation plan.
+*   `tasks.md`: Task checklist used to implement the plan.
+*   `walkthrough.md`: Step-by-step walkthrough.
+*   `.gitignore`: Generic for R projects. Exclude VS Code and RStudio metadata files.
+    **Do not** exclude `data/` or `plots/` folders.
+
+***
+
+#### **Technical Details**
+
+*   Use `pacman::p_load()` for package loading.
+*   Use `here::here()` for folder and file access.
+*   Include error handling throughout the script.
+*   Test and debug the code to ensure:
+    *   Creation of data and plots folders.
+    *   Correct merging of map and emissions data.
+    *   Proper color differentiation between states.
+
+***
+
+### **Deliverables**
+
+*   R script implementing all requirements.
+*   `README.md` with:
+    *   Map preview.
+    *   Citation and DOI link.
+    *   Links to all markdown files.
+    *   Project structure section.
+*   `plan.md`, `tasks.md`, `walkthrough.md`, `.gitignore`.
