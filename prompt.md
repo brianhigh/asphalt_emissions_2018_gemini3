@@ -1,6 +1,7 @@
-### **Coding Prompt**
+## **Coding Prompt**
 
-**Goal:**  
+### **Goal**
+
 Write an R script that creates a choropleth map of U.S. states using **ggplot2**, based on asphalt emissions data provided by the U.S. Environmental Protection Agency (EPA). The data file is: `AP_2018_State_County_Inventory.xlsx`. Download URL: `https://pasteur.epa.gov/uploads/10.23719/1531683/AP_2018_State_County_Inventory.xlsx`
 
 ***
@@ -32,6 +33,7 @@ Write an R script that creates a choropleth map of U.S. states using **ggplot2**
     *   Medium values: **yellow**
     *   High values: **red**
     *   Ensure colors are vivid and distinct (not washed out or muddy).
+    *   Use `linewidth` instead of `size` with functions like `geom_polygon()`.
 3.  State borders: **grey**.
 4.  Plot background: **white**.
 5.  Add:
@@ -85,3 +87,4 @@ Create the following files:
     *   Links to all markdown files.
     *   Project structure section.
 *   `plan.md`, `tasks.md`, `walkthrough.md`, `.gitignore`.
+
