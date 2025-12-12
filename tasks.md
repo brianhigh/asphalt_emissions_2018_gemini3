@@ -1,0 +1,27 @@
+# Task Checklist
+
+- [x] **Project Setup**
+    - [x] Create `.gitignore`
+    - [x] Initialize project folders (`data/`, `plots/`) in the R script logic
+- [x] **Implementation Plan**
+    - [x] Create `plan.md`
+- [x] **R Script Implementation**
+    - [x] Setup (packages, paths)
+    - [x] Data Download Logic (conditional, binary mode)
+    - [x] Data Processing
+        - [x] Read Excel (suppress messages)
+        - [x] Extract columns
+        - [x] Normalize state names
+    - [x] Map Generation
+        - [x] Load `usmap` data
+        - [x] Merge data
+        - [x] Create ggplot choropleth
+        - [x] Styling (colors, borders, titles, caption)
+    - [x] Output
+        - [x] Save plot to `plots/`
+- [x] **Documentation**
+    - [x] Create `README.md`
+    - [x] Create `walkthrough.md`
+    - [x] Create `tasks.md`
+- [x] **Verification**
+    - [x] Run script and verify output
