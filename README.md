@@ -29,4 +29,4 @@ Data File: `AP_2018_State_County_Inventory.xlsx` (Source: EPA/Pasteur)
 *   [Walkthrough](walkthrough.md)
 
 ## Colophon
-This project was created using the [Gemini 3 (Pro)](https://gemini.ai/) generative AI model via [Google Antigravity](https://antigravity.google/) on 2025-12-12. The only manual edits were to the `README.md` file to add this colophon and references to the `prompt.md` file.
+This project was created using the [Gemini 3 (Pro)](https://gemini.ai/) generative AI model via [Google Antigravity](https://antigravity.google/) on 2025-12-12. The agentic workflow took 3 minutes to complete. The only manual edits were to the `README.md` file to add this colophon and references to the `prompt.md` file.
